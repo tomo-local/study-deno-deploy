@@ -1,8 +1,9 @@
 {
   "tasks": {
     "dev": "deno run --watch main.ts",
-    "check": "deno fmt --check **/*.ts && deno lint **/*.ts",
-    "format": "deno fmt --check **/*.ts",
-    "lint": "deno lint --check **/*.ts"
+    "check": "deno fmt --check *.ts && deno lint && deno test --allow-read --allow-write --unstable",
+    "format": "deno fmt --check ~/*.ts",
+    "lint": "deno lint --check ~/*.ts",
+    "test": "deno test --allow-read --allow-write --unstable"
   }
 }
