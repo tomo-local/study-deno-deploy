@@ -1,1 +1,1 @@
-Deno.serve((req: Request) => new Response("Hello World"));
+Deno.serve(() => new Response("Hello World"));
