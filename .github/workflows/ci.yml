@@ -1,0 +1,19 @@
+name: CI
+
+on: [pull_request]
+
+jobs:
+  deno-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: denoland/setup-deno@main
+        with:
+          deno-version: v1.x
+
+      - name: Deno version
+        run: deno --version
+
+      - name: Run check
+        run:
+          "deno task check"
