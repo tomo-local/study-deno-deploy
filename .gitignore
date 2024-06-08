@@ -1,0 +1,22 @@
+# Deno cache
+.cache
+
+# Deno test results
+deno-test-results
+
+# Deno compiled files
+*.js
+
+# Deno TypeScript declaration files
+*.d.ts
+
+# Deno coverage reports
+coverage
+
+# Deno log files
+*.log
+
+# Deno lock file
+lock.json
+
+.vscode/*
